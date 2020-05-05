@@ -3,6 +3,8 @@ package Book;
 public class FictionBook extends Book{
     private String category;
 
+    public FictionBook(){}
+
     public FictionBook(String category) {
         this.category = category;
     }

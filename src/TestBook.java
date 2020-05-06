@@ -6,8 +6,6 @@ import java.util.Scanner;
 
 public class TestBook {
     public static void main(String[] args) {
-        int count = 0;
-        double totalPrice = 0.0;
 
         ProgrammingBook pb1 = new ProgrammingBook("bc01", "Code Complete 2", 250000.0, "Steve McConnell", "Java", "Spring MVC");
         ProgrammingBook pb2 = new ProgrammingBook("bc02", "Yellow book", 110000.0, "Rob Miles", "C#", ".Net");

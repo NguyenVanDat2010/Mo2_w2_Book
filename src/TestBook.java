@@ -49,11 +49,14 @@ public class TestBook {
     }
 
     //Đếm số cuốn sánh ngôn ngữ Java
-    public static void countBooks(ProgrammingBook[] programmingBooks) {
+    public static void countBooks(Book[] books) {
         double count = 0;
-        for (int i = 0; i < programmingBooks.length; i++) {
-            if (programmingBooks[i].getLanguage().equals("Java")) {
-                count++;
+        for (int i = 0; i < books.length; i++) {
+            if (books[i] instanceof ProgrammingBook) {              //Kiểm tra cùng kiểu dữ liệu hay ko
+                ProgrammingBook book=(ProgrammingBook)books[i];     //ép kiểu
+                if (book.getLanguage().equals("Java")){
+                    count++;
+                }
             }
         }
         System.out.println("There are " + count + " books named Java");
@@ -106,4 +109,5 @@ public class TestBook {
 //        }
 //        return -1;
 //    }
+//    compareTo
 }
